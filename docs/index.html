@@ -5,19 +5,23 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link href="./_app/immutable/assets/2.CDPUlRYt.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.DTQ5EF2U.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.B1iZQoUg.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.BfiJE7qd.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.BkxjfHYW.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.C-kKoTim.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.BU5_cMjS.js">
+		<link href="./_app/immutable/assets/2.BSoNbyGL.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BvDypTGw.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.VTtGN7fd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BWih1DpW.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BgirXYhI.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.B-Hs0qpU.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.DLF3p7mR.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.CaP7XERa.js">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
             html {
                 font-family: 'Red Hat Display', sans-serif;
+            }
+
+            body {
+                margin: 1rem !important;
             }
 
             code {
@@ -28,11 +32,11 @@
         </style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <div><div id="container" class="svelte-1448kct"><div class="header" data-svelte-h="svelte-1mdch8v"><h1>easydars</h1></div> <input type="file" accept=".html,.htm"> <button data-svelte-h="svelte-1y8j2ct">audit result</button> <div id="originalAudit" class="svelte-1448kct"></div> </div> <div class="vitals svelte-1gyzyuc">   </div></div> 
+		<div style="display: contents">  <div class="main svelte-1n6p9l9"><div class="content center svelte-1n6p9l9"><div class="container svelte-xp3o8b"><div class="header" data-svelte-h="svelte-1mdch8v"><h1 class="svelte-xp3o8b">easydars</h1></div> <div class="steps svelte-xp3o8b"><div class="step 1 svelte-xp3o8b" data-svelte-h="svelte-1m5ovux"><h2 class="svelte-xp3o8b">1</h2> <span>Go to <a href="https://dars.ucla.edu" target="_blank" rel="noopener noreferrer">dars.ucla.edu</a> and run a new DARS audit</span></div> <div class="step 2 svelte-xp3o8b"><h2 class="svelte-xp3o8b" data-svelte-h="svelte-nyo2gk">2</h2> <span>Open the new audit and save the page as an HTML file (Ctrl + S)</span></div> <div class="step 3 svelte-xp3o8b"><h2 class="svelte-xp3o8b" data-svelte-h="svelte-ny3km1">3</h2> <span data-svelte-h="svelte-1i77az">Upload the HTML file here →</span> <input id="auditUpload" type="file" accept=".html,.htm" class="svelte-xp3o8b"></div></div> </div></div> </div> <div id="originalAudit" class="svelte-1n6p9l9"></div> 
 			
 			<script>
 				{
-					__sveltekit_ua0pjp = {
+					__sveltekit_46gat5 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/easydars"
 					};
@@ -42,8 +46,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.DTQ5EF2U.js"),
-						import("./_app/immutable/entry/app.BfiJE7qd.js")
+						import("./_app/immutable/entry/start.BvDypTGw.js"),
+						import("./_app/immutable/entry/app.BgirXYhI.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
