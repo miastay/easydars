@@ -1,15 +1,17 @@
+@import './color.scss';
+
 @mixin frame {
     display: flex;
     flex-direction: column;
     border: solid 1px $theme-gray-200;
     padding: 1rem;
     gap: 0.5rem;
-    width: min-content;
 }
 
 @mixin bignumber($theme-1: $theme-blue-500, $theme-2: $theme-gray-700, $weight: 800) {
 
     @include frame;
+    gap: 1rem;
 
     .number-item {
         display: flex;
@@ -54,3 +56,37 @@
     }
 }
    
+
+button {
+    @include frame;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    background: $theme-gray-200;
+    border-color: $theme-gray-500;
+    color: black;
+    &:hover {
+        background: $theme-gray-100;
+    }
+    &:active {
+        background: $theme-gray-300;
+    }
+    &.primary {
+        background: $theme-blue-500;
+        border-color: $theme-blue-700;
+        color: white;
+        &:hover {
+            background: $theme-blue-400;
+        }
+        &:active {
+            background: $theme-blue-600;
+        }
+    }
+    &.small {
+        padding: 0.25rem 0.5rem;
+    }
+    transition: background 0.15s ease;
+}
+
+h1, h2, h3, h4 {
+    margin-block: 0;
+}

@@ -4,8 +4,18 @@
 
 <div class="units-container">
     <div class="number-item big">
-        <code>{data['coursework-hours'] ?? '--'}</code>
+        <code>{data['total'] ?? '--'}</code>
         <span>Units Earned</span>
+    </div>
+    <div class="number-small-container">
+        <div class="number-item">
+            <code>{data['ucla'] ?? '--'}</code>
+            <span>UCLA</span>
+        </div>
+        <div class="number-item">
+            <code>{data['ap'] ?? '--'}</code>
+            <span>AP</span>
+        </div>
     </div>
 </div>
 
